@@ -1,0 +1,163 @@
+<html>
+<head>
+<title>FEEDBACK-Investmentz.com - Your currency for online trading and e-broking in India</title>
+<!—Applying styles for the page. -->
+<!--Applying client side validations using JavaScript. -->
+<script language="javascript">
+function isEmpty(str)
+{
+if(str=="")
+{
+return true;
+}
+else return false;
+}
+<!--The validateAll() function checks if any field is left blank by the customer and displays the alert message. -->
+function validateAll()
+{
+var email = document.forms[0].email.value;
+var name = document.forms[0].name.value;
+var reg = new RegExp("^[A-Za-z0-9_]{1,}[.]?[A-Za-z0-9_]{1,}@{1}([A-Za-z0-9_]+[.]{1})+[A-Za-z0-9_]{1,}$");
+if(isEmpty(name)) 
+{
+alert("Please type your name.");
+document.forms[0].name.focus();
+return false;
+}
+else if(isEmpty(email)) 
+{
+alert("Please type your e-mail address.");
+document.forms[0].email.focus();
+return false;
+}
+else if(!isEmpty(email)) 
+{
+if(!reg.test(email)) 
+{
+alert("Invalid E-mail address. Please re-enter.");
+document.forms[0].email.focus();
+return false;
+}
+}		
+}
+<!--The func_subm() function submits the text field values to the server after validating them. -->
+function func_subm()
+{
+if(validateAll())
+{
+frmRegister.action="feedback.jsp";
+frmRegister.method="post";
+frmRegister.submit();
+}
+}
+</script>
+</head>
+<body bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+<table align=center border=0 cellpadding=0 cellspacing=0 width="98%">
+<tbody> 
+<tr bgcolor=#FFFFFF align="left"> 
+<td height=30 valign=top colspan="2"> 
+<div align="left"><img src="vinn.png" width="190" height="45" align="top" vspace="0" hspace="0"> </div>
+</td>
+</tr>
+</tbody> 
+</table>
+<table align=center border=0 cellpadding=0 cellspacing=0 width="98%">
+<tbody> 
+<tr> 
+<td colspan=2 valign=top> 
+      <hr color=#c0003b size=1>
+      </td>
+</tr>
+<!-- Top hyperlink row ends. --> </tbody> 
+</table>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr bgcolor="#c0003b"> 
+<td> 
+<div align="center"><font face="Arial, Helvetica, sans-serif" size="3" color="#FFFFFF"><b>YOUR FEEDBACK </b></font></div>
+      </td>
+</tr>
+</table>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr> 
+<td> 
+<form name="frm_sell" method="post" action="feedback.jsp"> <br> <br>
+<table width="85%" border="0" cellspacing="0" cellpadding="0" align="center">
+      <tr> 
+            <td width="20%">&nbsp;
+</td>
+            <td width="28%">&nbsp;
+</td>
+            <td colspan="2">&nbsp; 
+</td>
+      </tr>
+      <tr> 
+            <td width="20%">&nbsp;</td>
+<td width="28%"><font face="Arial, Helvetica, sans-serif" size="2">Name</font>
+</td>
+            <td colspan="2"> 
+            <input type="text" name="name">
+            </td>
+     </tr>
+     <tr> 
+            <td width="20%">&nbsp;
+</td>
+<td width="28%"><font face="Arial, Helvetica, sans-serif" size="2">Email</font>
+</td>
+            <td colspan="2"> 
+            <input type="text" name="email">
+            </td>
+</tr>
+      <tr> 
+            <td width="20%">&nbsp;
+</td>
+<td width="28%"><font face="Arial, Helvetica, sans-serif" size="2">Comments</font>
+</td>
+            <td colspan="2"> 
+<textarea name="comments"> </textarea>
+            </td>
+</tr>
+      <tr> 
+            <td width="20%">&nbsp;</td>
+            <td width="28%">&nbsp;</td>
+            <td colspan="2">&nbsp;</td>
+      </tr>
+      <tr> 
+            <td height="29" width="20%"> 
+            <div align="center"> </div>
+            </td>
+            <td height="29" width="28%"> 
+            <div align="center"> 
+<input class=bu type="submit"            name="Submit" value="Submit" onFocus="func_subm()"> </div>
+            </td>
+            <td width="23%" height="29"> 
+            <div align="center"> 
+<input class=bu type="reset" name="Cancel" value="Cancel">       </div>
+            </td>
+<td width="29%" height="29">&nbsp;
+</td>
+</tr>
+      </table>
+<hr color=#c0003b size=1>
+</form>
+</td>
+</tr>
+</table>
+<table border=0 cellpadding=0 cellspacing=0 width="100%">
+<tbody> 
+<tr> 
+<td align=left valign=center height="35"> 
+<p align=center><font face="Arial" size="1"> | <a class=copyright href="home.htm">HOME</a> 
+&nbsp;| <a class=copyright href="mailto:info@investmentz.com">Contact us</a> &nbsp;| 
+<a class=copyright href=privacy.htm>Privacy Policy</a> &nbsp;| 
+<a class=copyright      href="http://www.sebi.gov.in/">SEBI</a> &nbsp;| 
+<a class=copyright 
+href="http://www.nse-india.com/">NSE</a> | <br> Investmentz.com - Your currency for online trading &amp; e-broking in       India </font></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+</body>
+</html>

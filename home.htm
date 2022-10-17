@@ -1,0 +1,222 @@
+<HTML>
+<HEAD>
+<TITLE>Investmentz.com - Your currency for online trading and e-broking in India</TITLE>
+<!--Applying styles for the page -->
+<!--Applying client side validations on a form before submitting it to the server.-->
+</STYLE>
+<SCRIPT language=JavaScript>
+<!--The function checkall() checks if the login name and password text boxes are left blank in the registration form and displays an alert message.-->
+function checkall() 
+{
+var loginname = document.forms[0].login.value;
+var pwd = document.forms[0].password.value;
+if(loginname==null || loginname=="") 
+{
+alert("Please type your login name.");
+<!--Bringing the focus into the login text field.-->
+document.forms[0].login.focus();
+return false;
+}
+else if(pwd == null || pwd =="") 
+{
+alert("Please type your password.");
+document.forms[0].password.focus();
+return false;
+}
+else
+{
+return true;
+}
+}
+</SCRIPT>
+<META content="MSHTML 5.00.2614.3500" name=GENERATOR></HEAD>
+<BODY leftMargin=0 topMargin=0 marginwidth="0" marginheight="0" bgcolor="#FFFFFF">
+<STYLE type=text/css>.noline 
+{
+<!--Applying the font for various elements of a table.-->
+FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; FONT-SIZE: 10px; FONT-STYLE: normal; FONT-VARIANT: normal; FONT-WEIGHT: normal; TEXT-DECORATION: none; TEXT-TRANSFORM: none
+}
+</STYLE>
+<!--Applying borders thickness, distance between the cell content and cell border and the spacing between adjacent cells in a table. -->
+<TABLE border=0 cellPadding=0 cellSpacing=0 width="100%">
+<TBODY>
+<TR bgcolor="#FFFFFF"> 
+<TD align=middle width="100%">
+<div align="left"><img src="vinnbig.jpg" width="315" height="64"></div>
+</TD>
+</TR>
+</TBODY>
+</TABLE>
+<TABLE width="100%">
+<TBODY>
+<TR>
+<TD class=btn height=1 width="100%">
+</TD>
+</TR>
+<TR>
+<TD height=16 width="100%">
+</TD>
+</TR></TBODY></TABLE>
+<!--On clicking the submit button, the page calls the function checkall() that in turn calls the next page FirstLevelCheck.jsp. -->
+<FORM action=FirstLevelCheck.jsp method=post onsubmit="return checkall()">
+<div align="right"><font size="2" face="Arial, Helvetica, sans-serif" color="#CC0033"><b>First Level Login&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b></font> 
+</div>
+<TABLE border=0 cellPadding=0 cellSpacing=0 width="100%">
+<TBODY> 
+<TR> 
+<TD align=middle width="13" height="192">&nbsp;
+</TD>
+<TD vAlign=center width="125" height="192"> 
+<TABLE border=0 cellPadding=1 cellSpacing=1 width="100%">
+<TBODY> 
+<TR> 
+<TD class=btn>
+<div align="center"><A class=btn 
+href=" ">investmentz</A></div>
+</TD>
+</TR>
+<TR> 
+<TD bgColor=#ffffff height=2>
+</TD>
+</TR>
+<TR> 
+<TD bgColor=#ffffff height=2></TD>
+</TR>
+<TR> 
+<TD class=btn><a class=btn 
+      href="works.htm">How it Works</a>
+</TD>
+</TR>
+<TR> 
+<TD bgColor=#ffffff height=2></TD>
+</TR>
+<TR> 
+      <TD bgColor=#ffffff height=2></TD>
+</TR>
+<TR> 
+      <TD class=btn height="14"><a class=btn 
+       href="dos.htm">Dos and Don'ts</a></TD>
+</TR>
+<TR> 
+      <TD bgColor=#ffffff height=2></TD>
+</TR>
+<TR> 
+      <TD bgColor=#ffffff height=2></TD>
+</TR>
+<TR> 
+      <TD class=btn><a class=btn 
+ href="market& news.htm">Market News</a> </TD>
+</TR>
+<TR> 
+<TD bgColor=#ffffff height=2></TD>
+</TR>
+<TR> 
+<TD class=btn><a class=btn href="faq.htm">FAQ</a>
+</TD> 
+</TR>
+<TR> 
+      <TD bgColor=#ffffff height=2></TD>
+ </TR>
+ <TR> 
+      <TD bgColor=#ffffff height=2>
+</TD>
+</TR>
+<TR> 
+<TD class=btn><a class=btn href="terms.htm">Terms</a></TD>
+</TR>
+<TR> 
+      <TD bgColor=#ffffff height=2></TD>
+</TR>
+<TR> 
+<TD class=btn><A class=btn href="mailto:info@investmentz.com">Contact Us</A>
+</TD>
+</TR>
+</TBODY> 
+</TABLE>
+    	</TD>
+<TD align=middle width="29" height="192">&nbsp;
+</TD>
+<TD class=note1 colspan="2" height="192" valign="top"> 
+<p><font face="Arial, Helvetica, sans-serif" size="3">
+Gone are the days……………to successful online share investing. </font> </p>
+<!--Calling the page Registration.htm on clicking the hyperlink Register now.
+-->
+<p><A class=note1 href= "Registration.htm"><B>Register    now</B></A><B> to buy and sell shares       on the Internet at the Speed of Thought</B><BR>
+      </p>
+      </TD>
+<TD align=middle rowSpan=5 width="12" height="192">&nbsp;</TD>
+      <TD width="202" height="192"> 
+<TABLE border=0 cellPadding=0 cellSpacing=0 width="100%">
+<TBODY>
+<TR> 
+<!--Displaying the label as Login Name.-->
+<TD align=right noWrap><b>Login Name</b>&nbsp;&nbsp;
+</TD>
+      <TD align=left> 
+<!--Creating a text field for the label, Login Name. -->
+<INPUT class=flat maxLength=30 name=login size=10>
+      </TD>
+</TR>
+<TR> 
+     <TD height=4></TD>
+</TR>
+<TR> 
+<TD align=right><B>Password</B>&nbsp;&nbsp;
+</TD>
+     <TD align=left> 
+<INPUT class=flat maxLength=30 name=password size=10          type=password>
+     </TD>
+</TR>
+<TR> 
+     <TD height=4></TD>
+</TR>
+<TR> 
+<!--Creating a button with the caption, SUBMIT.--> 
+<TD align=right colSpan=2><BUTTON class=lgn type=submit>SUBMIT</BUTTON>
+<BR> <BR>
+      </TD>
+</TR>
+<TR> 
+      <TD align=right colSpan=2><B><BR>
+<A href="Registration.htm">New user? Sign Up</A></B>
+</TD>
+</TR>
+<TR> 
+       <TD align=right colSpan=2><B><BR>
+ <A href="feedback.htm">Your FeedBack</A></B></TD>
+</TR>
+</TBODY>
+</TABLE>
+      </TD>
+      <TD width="14" height="192">&nbsp;
+</TD>
+</TR>
+</TBODY> 
+</TABLE>
+<DIV align=center><BR> <BR>
+</DIV>
+<TABLE width="100%">
+<TBODY> 
+<TR> 
+<TD class=btn height=1 width="100%">
+</TD>
+</TR>
+</TBODY>
+</TABLE>
+<TABLE border=0 cellPadding=0 cellSpacing=0 width="100%">
+  <TBODY>
+  <TR>
+<TD align=left vAlign=center height="35"><FONT face=Arial size=1> 
+<P align=center> | <A class=copyright href="home.htm">HOME</A> &nbsp;| <A class=copyright href = "mailto:info@investmentz.com">Contact 
+      us</A> &nbsp;| 
+<A class=copyright href= "privacy.htm">Privacy Policy</A> &nbsp;| 
+<A class=copyright href= "http://www.sebi.gov.in/">SEBI</A> &nbsp;| 
+<A class=copyright 
+href="http://www.nse-india.com/">NSE</A> | <BR>
+Investmentz.com - Your currency for online trading &amp; e-broking in India </P> </FONT> </TD>
+</TR>
+</TBODY>
+</TABLE>
+</FORM>
+</BODY>
+</HTML>
