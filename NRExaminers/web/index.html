@@ -1,0 +1,223 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/fontawesome.min.css"/>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+        <title>Online Test Application</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            *{
+                padding: 0;
+                margin: 0;
+                box-sizing: border-box;
+            }
+            body{
+                margin: 0px;
+                background: #1E242A;
+            }
+            #main{
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                overflow: hidden;
+            }
+            #box1{
+                width: 530px;
+                height: 625px;
+               background-image: url('1.png');
+                position: absolute;
+                bottom: -100px;
+                left: 30%;
+                animation: anim 2s forwards, anim2 3s forwards 3s;
+            }
+            #box1:after{
+                content: '';
+                position: absolute;
+                width: 530px;
+                height: 625px;
+                background-image: url('2.png');
+                left: 0px;
+                z-index: -1;
+            }
+            @keyframes anim{
+                from{
+                    bottom: -100%;
+                }
+                to{
+                    bottom: 0%;
+                }
+            }
+            @keyframes anim2{
+                from{
+                    left: 30%;
+                    width: 530px;
+                }
+                to{
+                    width: 0px;
+                    left: 50%;
+                }
+            }
+            #box2{
+                width: auto;
+                height: auto;
+                font-family: 'Bahnschrift Condensed';
+                color: white;
+                font-size: 5em;
+                font-weight: 500;
+                line-height: -200px;
+                position: absolute;
+                top: 250px;
+                left: 100px;
+                overflow: hidden;
+            }
+            #text{
+                position: relative;
+                left: -100px;
+                animation: anim3 2s forwards 3s;
+                
+            }
+            @keyframes anim3{
+                from{
+                    left: -100%;
+                }
+                to{
+                    left: 0%;
+                }
+            }
+            #box3{
+                overflow: hidden;
+            }
+            #container{
+                width: 100%;
+                position: absolute;
+                top: -100%;
+                animation: anim4 2s forwards 2.5s;
+            }
+            #logo{
+                float: left;
+                margin-left: 100px;
+                margin-top: 20px;
+            }
+            #logo img{
+                width: 50px;
+            }
+            #menu{
+                font-family: 'Bahnschrift Condensed';
+                font-size: 14px;
+                color: white;
+                letter-spacing: 2px;
+                margin-top: -400px;
+                margin-right: 150px;
+                float: right;
+                
+            }
+            #menu ul{
+                list-style: none;
+                display: inline-flex;
+            }
+            #menu ul li{
+                width: 120px;
+                margin: 10px;
+                padding: 15px;
+                
+            }
+            #menu ul li a{
+                 text-align: center;
+                 text-decoration: none;
+                 color: white;
+                
+            }
+            #active,#menu ul li:hover
+            {
+                background-color: #2AB45F;
+                border-radius: 3px;
+            }
+            #active,#menu ul li
+            {
+                width: 150px;
+                height: 20px;
+                padding: 25px;
+                text-align: center;
+              
+            }
+            #sub-menu
+            {
+                display: none;
+            }
+            #menu ul li:hover #sub-menu
+            {
+                display: block;
+                position: absolute;
+                background: rgb(0,100,0);
+                color: white;
+                margin-top: 15px;
+                margin-left: -5px;
+            }
+             #menu ul li:hover #sub-menu ul
+            {
+                display: block;
+                margin: 5px;
+            }
+             #menu ul li:hover #sub-menu ul li
+            {
+               width: 150px;
+               padding: 20px;
+               border-bottom: 1px dotted #fff;
+               background: transparent;border-radius: 0;
+               text-align: left;
+            }
+            #menu ul li:hover #sub-menu ul li:last-child
+            {
+               border-bottom: none;
+            }
+             #menu ul li:hover #sub-menu ul li a:hover
+            {
+               color: #b2ff00;
+            }
+            @keyframes anim4{
+                from{
+                    top: -100%;
+                }
+                top{
+                    top: 0%;
+                }
+            }
+        </style>
+            
+    </head>
+    <body>
+        
+        <div id="main">
+            <div id="box1"></div>
+            <div id="box2">
+                <div id="text">Welcome To my Application</div>
+            </div>
+            <div id="menu" style="margin-top: 20px">
+                        <ul>
+                            <li id="active"><a href="#">Home</a></li>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Exams</a>
+                            <div id="sub-menu">
+                                    <ul>
+                                        <li><a href="#">Java</a></li>
+                                        <li><a href="#">Python</a></li>
+                                        <li><a href="#">DBMS</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li><a href="#">Register</a></li>
+                        </ul>
+                    </div>
+            <div id="box3">
+                <div id="container">
+                    <div id="logo">
+                        <img src="logo.jpg" alt="alt"/>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+           
+    </body>
+</html>
